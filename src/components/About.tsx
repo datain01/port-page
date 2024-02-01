@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import LangCard from "./detail/langCard";
 
 const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     const [greeting, setGreeting] = useState<string>('');
@@ -34,27 +35,77 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 </h3>
 
                 <div className="text-center" style={{marginTop:"4rem"}}>
-                <h3> 
-                I am a computer engineering student at California State University, Fullerton.
-                </h3>
-                <div className="google-map w-100">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.283490905923!2d-117.88767822289488!3d33.88235202667956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd5ce8cc61391%3A0x2b9810bbb94af355!2sCalifornia%20State%20University%2C%20Fullerton!5e0!3m2!1sen!2skr!4v1686536897459!5m2!1sen!2skr"
-                            width="600" height="400" style={{border:"0"}} allowFullScreen className="mt-4"></iframe>
-                </div>
-                <h5 style={{margin:"3rem 12rem"}}>
-                test
-                </h5>
+                    <h3> 
+                    I am a computer engineering student at California State University, Fullerton.
+                    </h3>
+                    <div className="google-map w-100">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.283490905923!2d-117.88767822289488!3d33.88235202667956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd5ce8cc61391%3A0x2b9810bbb94af355!2sCalifornia%20State%20University%2C%20Fullerton!5e0!3m2!1sen!2skr!4v1686536897459!5m2!1sen!2skr"
+                                width="600" height="400" style={{border:"0"}} allowFullScreen className="mt-4"></iframe>
+                    </div>
+                    <h5 style={{margin:"3rem 12rem"}}>
+                    I am from Korea and currently an undergraduate student in computer engineering major. 
+                    The estimated graduation year is 2024. I have experience of living in Korea, Czech Republic, 
+                    and United States which drive me to have a flexible mind. 
+                    I improved skills related to computer design and electronics during Bachelor's degree. 
+                    I can work with several programming languages such as C/C++, VHDL, Verilog, Assembly language, HTML, CSS, JavaScript 
+                    (TypeScript) I am interested in game engineering and designing. To achieve my goal, 
+                    I have never stopped improving my skills related to them. If you are interested in me, 
+                    please check the following resume.
+                    </h5>
 
-                {/* 링크는 이력서로 바꾸기 */}
-                <a href="https://www.google.com" target="_blank">
-                    <button type="button" className={`btn ${darkMode ? 'btn-outline-light' : 'btn-outline-dark'}`} 
-                        style={{ marginTop: '-1rem' }}>
-                        <i className={`bi bi-download`}></i> Download Resume
-                    </button>
-                </a>
+                    {/* 링크는 이력서로 바꾸기 */}
+                    <a href="https://www.google.com" target="_blank">
+                        <button type="button" className={`btn ${darkMode ? 'btn-outline-light' : 'btn-outline-dark'}`} 
+                            style={{ marginTop: '-1rem' }}>
+                            <i className={`bi bi-download`}></i> Download Resume
+                        </button>
+                    </a>
 
+                    <h2 className="mt-5">Language Skills</h2>
 
+                    <div className="container">
+                    
+                    <div className="row mt-5">
+                        <LangCard
+                        imageUrl="이미지 URL 1"
+                        description="카드 1 설명"
+                        />
+                        <LangCard
+                        imageUrl="이미지 URL 2"
+                        description="카드 2 설명"
+                        />
+                        <LangCard
+                        imageUrl="이미지 URL 3"
+                        description="카드 3 설명"
+                        />
+                        <LangCard
+                        imageUrl="이미지 URL 4"
+                        description="카드 4 설명"
+                        />
+                    </div>
+
+                    <div className="row mt-5">
+                        <LangCard
+                        imageUrl="이미지 URL 1"
+                        description="카드 1 설명"
+                        />
+                        <LangCard
+                        imageUrl="이미지 URL 2"
+                        description="카드 2 설명"
+                        />
+                        <LangCard
+                        imageUrl="이미지 URL 3"
+                        description="카드 3 설명"
+                        />
+                        <LangCard
+                        imageUrl="이미지 URL 4"
+                        description="카드 4 설명"
+                        />
+                    </div>
+                    </div>
+                    
+                    
                 
                 </div>
 
