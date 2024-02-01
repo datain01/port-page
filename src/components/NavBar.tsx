@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface NavBarProps {
     darkMode: boolean;
     toggleDarkMode: () => void; // 함수 타입을 추가합니다.

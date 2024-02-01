@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Head from './components/Head';
 import NavBar from './components/NavBar';
+import About from './components/About';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,6 +14,7 @@ function App() {
     <>
       <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Head darkMode={darkMode} />
+      <About darkMode={darkMode} />
     </>
   );
 }
