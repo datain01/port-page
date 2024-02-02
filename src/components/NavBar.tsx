@@ -23,7 +23,7 @@ interface NavBarProps {
                         <span className="ms-auto">
                         <span className={`nav-link fw-bold me-5 ${darkMode ? 'text-light' : 'text-dark'}`}>
                             <button onClick={toggleDarkMode} className={`btn ${darkMode ? 'btn-dark' : 'btn-light'} me-3`}>
-                                {darkMode ? 'Light Mode' : 'Dark Mode'} </button>  
+                                {darkMode ? <i className="bi bi-sun"></i> : <i className="bi bi-moon"></i>} </button>  
                             e-mail: baksoeun01@gmail.com</span>
                         </span>
                     </div>

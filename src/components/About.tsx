@@ -62,47 +62,46 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         </button>
                     </a>
 
-                    <h2 className="mt-5">Language Skills</h2>
+                    <h2 className="mt-5">Skills</h2>
 
-                    <div className="container">
-                    
-                    <div className="row mt-5">
-                        <LangCard
-                        imageUrl="이미지 URL 1"
-                        description="카드 1 설명"
-                        />
-                        <LangCard
-                        imageUrl="이미지 URL 2"
-                        description="카드 2 설명"
-                        />
-                        <LangCard
-                        imageUrl="이미지 URL 3"
-                        description="카드 3 설명"
-                        />
-                        <LangCard
-                        imageUrl="이미지 URL 4"
-                        description="카드 4 설명"
-                        />
-                    </div>
+                    <div className="container">                    
+                        <div className="row mt-5 justify-content-center">
+                            <LangCard
+                            imageUrl="src/components/image/skill_c.png"
+                            description="C/C++"
+                            />
+                            <LangCard
+                            imageUrl="src/components/image/skill_vhdl.png"
+                            description="VHDL"
+                            />
+                            <LangCard
+                            imageUrl="src/components/image/skill_verilog.png"
+                            description="Verilog"
+                            />
+                            <LangCard
+                            imageUrl="src/components/image/skill_js.png"
+                            description="JavaScript/TypeScript"
+                            />
+                        </div>
 
-                    <div className="row mt-5">
-                        <LangCard
-                        imageUrl="이미지 URL 1"
-                        description="카드 1 설명"
-                        />
-                        <LangCard
-                        imageUrl="이미지 URL 2"
-                        description="카드 2 설명"
-                        />
-                        <LangCard
-                        imageUrl="이미지 URL 3"
-                        description="카드 3 설명"
-                        />
-                        <LangCard
-                        imageUrl="이미지 URL 4"
-                        description="카드 4 설명"
-                        />
-                    </div>
+                        <div className="row mt-5 justify-content-center">
+                            <LangCard
+                            imageUrl="src/components/image/skill_css.png"
+                            description="CSS"
+                            />
+                            <LangCard
+                            imageUrl="src/components/image/skill_react.png"
+                            description="React"
+                            />
+                            <LangCard
+                            imageUrl="src/components/image/skill_next.png"
+                            description="Next.js"
+                            />
+                            <LangCard
+                            imageUrl="src/components/image/skill_ex.png"
+                            description="Express.js"
+                            />
+                        </div>
                     </div>
                     
                     
