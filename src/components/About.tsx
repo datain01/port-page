@@ -69,18 +69,22 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                             <LangCard
                             imageUrl="src/components/image/skill_c.png"
                             description="C/C++"
+                            darkMode={darkMode}
                             />
                             <LangCard
                             imageUrl="src/components/image/skill_vhdl.png"
                             description="VHDL"
+                            darkMode={darkMode}
                             />
                             <LangCard
                             imageUrl="src/components/image/skill_verilog.png"
                             description="Verilog"
+                            darkMode={darkMode}
                             />
                             <LangCard
                             imageUrl="src/components/image/skill_js.png"
                             description="JavaScript/TypeScript"
+                            darkMode={darkMode}
                             />
                         </div>
 
@@ -88,21 +92,38 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                             <LangCard
                             imageUrl="src/components/image/skill_css.png"
                             description="CSS"
+                            darkMode={darkMode}
                             />
                             <LangCard
                             imageUrl="src/components/image/skill_react.png"
                             description="React"
+                            darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="src/components/image/skill_next.png"
+                            imageUrl="src/components/image/skill_ne.png"
                             description="Next.js"
+                            darkMode={darkMode}
                             />
                             <LangCard
                             imageUrl="src/components/image/skill_ex.png"
                             description="Express.js"
+                            darkMode={darkMode}
                             />
                         </div>
                     </div>
+
+                    <div className="progress-stacked" style={{ margin: "4rem 16rem", height:'2rem' }}>
+                        <div className="progress" role="progressbar" aria-label="Korean" aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} style={{ width: '40%', height: '2rem' }}>
+                            <div className="progress-bar bg-primary" style={{ width: '100%', height: '2rem' }}>Korean</div>
+                        </div>
+                        <div className="progress" role="progressbar" aria-label="English" aria-valuenow={35} aria-valuemin={0} aria-valuemax={100} style={{ width: '35%', height: '2rem' }}>
+                            <div className="progress-bar bg-success" style={{ width: '100%', height: '2rem' }}>English</div>
+                        </div>
+                        <div className="progress" role="progressbar" aria-label="Japanese" aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} style={{ width: '25%', height: '2rem' }}>
+                            <div className="progress-bar bg-info" style={{ width: '100%', height: '2rem' }}>Japanese</div>
+                        </div>
+                    </div>
+
                     
                     
                 
