@@ -25,7 +25,7 @@ const ProjCard: React.FC<ProjCardProps> = ({ lang, title, date, context, darkMod
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{context}</p>
-        <a href={buttonLink} className={btnClasses}>Visit Project</a>
+        <a href={buttonLink} className={btnClasses}>See Project Code</a>
       </div>
     </div>
   );
