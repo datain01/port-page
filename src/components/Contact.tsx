@@ -3,7 +3,6 @@ darkMode: boolean;
 }
 
 const Contact: React.FC<ContactProps> = ({darkMode}) => {
-    const textClass = darkMode ? 'text-light' : 'text-dark';
 
     const copyEmailToClipboard = async () => {
         const email = "baksoeun01@gmail.com";

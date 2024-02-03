@@ -19,52 +19,66 @@ const Project: React.FC<ProjectProps> = ({ darkMode }) => {
         <div className="row mt-5 justify-content-center">
           <div className="col-md-4 mx-4">
             <ProjCard
-              title="Project Title 1"
-              date="January 1, 2024"
-              context="This is a brief description of my project."
+              lang = "React, TypeScript"
+              title="Half-Random Nickname Generator"
+              date="September 10, 2023"
+              context="A random nickname generator for a game called, Maplestory. The user can type one letter and then generate random letters for rest of the space."
               darkMode={darkMode}
+              buttonLink="https://github.com/datain01/half-nyehuing"
             />
           </div>
           <div className="col-md-4 mx-4">
             <ProjCard
-              title="Project Title 2"
-              date="January 2, 2024"
-              context="This is another project description."
+              lang = "HTML, JavaScript/TypeScript"
+              title="Game Stats Simulator"
+              date="June 22, 2023"
+              context="A simulation calculator for a game called, Maplestory. This is for calculating a system called hyper stats in the game."
               darkMode={darkMode}
+              buttonLink="https://github.com/datain01/hyperCalc"
             />
           </div>
 
           <div className="col-md-4 mx-4 mt-4">
             <ProjCard
-              title="Project Title 1"
-              date="January 1, 2024"
-              context="This is a brief description of my project."
+              lang = "MATLAB"
+              title="Real-Time Voice Shifter"
+              date="December 7, 2023"
+              context="Offering interactive pitch shifting and echo effects directly. 
+              Users can adjust the pitch to higher or lower tones and add degrees of echo actively using sliders.
+              "
               darkMode={darkMode}
+              buttonLink="#"
             />
           </div>
           <div className="col-md-4 mx-4 mt-4">
             <ProjCard
+            lang = "c"
               title="Project Title 2"
               date="January 2, 2024"
               context="This is another project description."
               darkMode={darkMode}
+              buttonLink="#"
             />
           </div>
 
           <div className="col-md-4 mx-4 mt-4">
             <ProjCard
+              lang = "c"
               title="Project Title 1"
               date="January 1, 2024"
               context="This is a brief description of my project."
               darkMode={darkMode}
+              buttonLink="#"
             />
           </div>
           <div className="col-md-4 mx-4 mt-4">
             <ProjCard
+              lang = "c"
               title="Project Title 2"
               date="January 2, 2024"
               context="This is another project description."
               darkMode={darkMode}
+              buttonLink="#"
             />
           </div>
           
