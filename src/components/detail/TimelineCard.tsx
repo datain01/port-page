@@ -11,7 +11,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ date, title, description, d
 
   const dateClass = darkMode ? 'text-light' : 'text-dark';
   const textClass = darkMode ? 'text-light' : 'text-dark';
-  const bgClass = darkMode ? 'bg-secondary' : 'bg-light';
+  const bgClass = darkMode ? 'bg-secondary' : 'bg-secondary-subtle';
 
   return (
     <li>
