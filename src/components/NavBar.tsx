@@ -1,9 +1,20 @@
 interface NavBarProps {
     darkMode: boolean;
-    toggleDarkMode: () => void; // 함수 타입을 추가합니다.
+    toggleDarkMode: () => void; 
   }
   
   const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
+
+    const copyEmailToClipboard = async () => {
+        const email = "baksoeun01@gmail.com";
+        try {
+          await navigator.clipboard.writeText(email);
+          alert("Email address copied to clipboard!"); 
+        } catch (err) {
+          console.error("Failed to copy: ", err);
+        }
+      };
+
     return (
       <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'} fixed-top`}>
                 <div className="container-fluid">
@@ -14,17 +25,20 @@ interface NavBarProps {
                     <div className="collapse navbar-collapse mx-5" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                     <a className="nav-link" aria-current="page" href="#">Home</a>
-                    <a className="nav-link" href="#">About</a>
-                    <a className="nav-link" href="#">Project</a>
-                    <a className="nav-link" href="#">Education</a>
-                    <a className="nav-link" href="#">Contact</a>
+                    <a className="nav-link" href="#about">About</a>
+                    <a className="nav-link" href="#project">Project</a>
+                    <a className="nav-link" href="#education">Education</a>
+                    <a className="nav-link" href="#contact">Contact</a>
                     </div>
                     
                         <span className="ms-auto">
                         <span className={`nav-link fw-bold me-5 ${darkMode ? 'text-light' : 'text-dark'}`}>
                             <button onClick={toggleDarkMode} className={`btn ${darkMode ? 'btn-dark' : 'btn-light'} me-3`}>
                                 {darkMode ? <i className="bi bi-sun"></i> : <i className="bi bi-moon"></i>} </button>  
-                            e-mail: baksoeun01@gmail.com</span>
+                                <span className="navbar-text" onClick={copyEmailToClipboard} style={{cursor: "pointer"}}>
+                                    baksoeun01@gmail.com
+                                </span>
+                            </span>
                         </span>
                     </div>
                 </div>

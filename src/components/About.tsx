@@ -48,9 +48,8 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     The estimated graduation year is 2024. I have experience of living in Korea, Czech Republic, 
                     and United States which drive me to have a flexible mind. 
                     I improved skills related to computer design and electronics during Bachelor's degree. 
-                    I can work with several programming languages such as C/C++, VHDL, Verilog, Assembly language, HTML, CSS, JavaScript 
-                    (TypeScript) I am interested in game engineering and designing. To achieve my goal, 
-                    I have never stopped improving my skills related to them. If you are interested in me, 
+                    I can work with several programming languages such as C/C++, VHDL, Verilog, Assembly language, HTML, CSS, JavaScript
+                    (TypeScript), and MATLAB. As I am interested in diverse skills, I can work with Adobe Premiere Pro, photoshop, and animation. If you are interested in me, 
                     please check the following resume.
                     </h5>
 

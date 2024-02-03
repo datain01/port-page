@@ -17,7 +17,6 @@ const Project: React.FC<ProjectProps> = ({ darkMode }) => {
 
       <div className={`container ${darkMode ? 'bg-dark' : 'bg-light'}`}>                    
         <div className="row mt-5 justify-content-center">
-          {/* 각 카드에 col-md-3 클래스를 적용하여 균등 배치 */}
           <div className="col-md-4 mx-4">
             <ProjCard
               title="Project Title 1"

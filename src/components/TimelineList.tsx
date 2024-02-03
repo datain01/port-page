@@ -7,7 +7,7 @@ interface TimelineListProps {
   
   const TimelineList: React.FC<TimelineListProps> = ({ darkMode }) => {
     return (
-      <div className="timeline-container">
+      <div className="timeline-container" style={{margin:"6rem 0rem"}}>
         <h1 className='text-center mt-5'>EDUCATION</h1>
         <ul className='timeline-list mt-5'>
           <TimelineCard
