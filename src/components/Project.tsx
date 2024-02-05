@@ -73,7 +73,7 @@ const Project: React.FC<ProjectProps> = ({ darkMode }) => {
               buttonLink="https://github.com/datain01/updown"
             />
           </div>
-
+          {/* 450 lab 4 */}
           <div className="col-md-4 mx-4 mt-4">
             <ProjCard
               lang = "C"
@@ -81,17 +81,29 @@ const Project: React.FC<ProjectProps> = ({ darkMode }) => {
               date="October 2023"
               context="It is a system that controls the traffic lights of cars and pedestrians at the intersection based on FSM state. It can be tested directly with the MSP432 microcontroller board."             
               darkMode={darkMode}
-              buttonLink="https://github.com/datain01/trafficControl/tree/main"
+              buttonLink="https://github.com/datain01/trafficControl"
             />
           </div>
+          {/* 450 lab 3 */}
           <div className="col-md-4 mx-4 mt-4">
             <ProjCard
               lang = "Assembly"
               title="Blink Controller"
               date="September 2023"
-              context="This is another project description."
+              context="Interfacing a switch and an LED with the MSP 432 board. The actual switch and LED are attached to the breadboard. The circuit was tested with Multisim."
               darkMode={darkMode}
-              buttonLink="#"
+              buttonLink="https://github.com/datain01/blinkControl"
+            />
+          </div>
+          <div className="col-md-4 mx-4 mt-4">
+            <ProjCard
+              lang = "C++"
+              title="Cache Hit Ratio Calculator"
+              date="November 2022"
+              context="For studying cache hit and cache miss concepts. There are four ways to calculate Fibonacci numbers and calculated cache hit ratios according to the
+              number of test cases."
+              darkMode={darkMode}
+              buttonLink="https://github.com/datain01/cacheHit"
             />
           </div>
           
