@@ -66,22 +66,22 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     <div className="container">                    
                         <div className="row mt-5 justify-content-center">
                             <LangCard
-                            imageUrl="src/components/image/skill_c.png"
+                            imageUrl="/port-page/image/skill_c.png"
                             description="C/C++"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="src/components/image/skill_vhdl.png"
+                            imageUrl="/port-page/image/skill_vhdl.png"
                             description="VHDL"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="src/components/image/skill_verilog.png"
+                            imageUrl="/port-page/image/skill_verilog.png"
                             description="Verilog"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="src/components/image/skill_js.png"
+                            imageUrl="/port-page/image/skill_js.png"
                             description="JavaScript/TypeScript"
                             darkMode={darkMode}
                             />
@@ -89,22 +89,22 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
 
                         <div className="row mt-5 justify-content-center">
                             <LangCard
-                            imageUrl="src/components/image/skill_css.png"
+                            imageUrl="/port-page/image/skill_css.png"
                             description="CSS"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="src/components/image/skill_react.png"
+                            imageUrl="/port-page/image/skill_react.png"
                             description="React"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="src/components/image/skill_ne.png"
+                            imageUrl="/port-page/image/skill_ne.png"
                             description="Next.js"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="src/components/image/skill_ex.png"
+                            imageUrl="/port-page/image/skill_ex.png"
                             description="Express.js"
                             darkMode={darkMode}
                             />
