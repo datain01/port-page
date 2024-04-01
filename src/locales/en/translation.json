@@ -1,26 +1,25 @@
 {
-    "educationTitle": "EDUCATION",
-    "timeline": [
-      {
+    "timeline": {
+      "elementarySchool": {
         "date": "2011-2014",
         "title": "International School of Prague",
         "description": "Attend the international school from 4th grade to 7th grade, which is located in Prague, Czech Republic."
       },
-      {
+      "highSchoolFirst": {
         "date": "2017-2018",
-        "title": "Pungduck HighSchool",
-        "description": "Attended highschool until 11th grade, which is located in Sugi-gu, Korea"
+        "title": "Pungduck High School",
+        "description": "Attended high school until 11th grade, which is located in Sugi-gu, Korea."
       },
-      {
+      "highSchoolSecond": {
         "date": "2018-2020",
-        "title": "Northwood HighSchool",
-        "description": "Attended highschool from 11th grade to 12th grade, which is located in California, United States."
+        "title": "Northwood High School",
+        "description": "Attended high school from 11th grade to 12th grade, which is located in California, United States."
       },
-      {
+      "university": {
         "date": "2020-Now",
         "title": "California State University, Fullerton",
-        "description": "Have attended university and expect to grade in 2024, computer engineering B.S. major undergraduate"
+        "description": "Have attended university and expect to grade in 2024, computer engineering B.S. major undergraduate."
       }
-    ]
+    }
   }
   

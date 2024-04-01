@@ -1,26 +1,25 @@
 {
-    "educationTitle": "EDUCATION",
-    "timeline": [
-      {
+    "timeline": {
+      "elementarySchool": {
         "date": "2011-2014",
-        "title": "International School of Prague",
-        "description": "Attend the international school from 4th grade to 7th grade, which is located in Prague, Czech Republic."
+        "title": "프라하 국제학교 (ISP)",
+        "description": "4학년부터 7학년까지 체코 프라하에 위치한 국제학교에 다님."
       },
-      {
+      "highSchoolFirst": {
         "date": "2017-2018",
-        "title": "Pungduck HighSchool",
-        "description": "Attended highschool until 11th grade, which is located in Sugi-gu, Korea"
+        "title": "풍덕고등학교",
+        "description": "11학년 (고등학교 2학년) 1학기까지 한국 수지구에 위치한 고등학교에 다님."
       },
-      {
+      "highSchoolSecond": {
         "date": "2018-2020",
-        "title": "Northwood HighSchool",
-        "description": "Attended highschool from 11th grade to 12th grade, which is located in California, United States."
+        "title": "노스우드 고등학교",
+        "description": "11학년부터 12학년까지 미국 캘리포니아에 위치한 고등학교에 다님."
       },
-      {
+      "university": {
         "date": "2020-Now",
-        "title": "California State University, Fullerton",
-        "description": "Have attended university and expect to grade in 2024, computer engineering B.S. major undergraduate"
+        "title": "캘리포니아 주립대학교, 풀러턴 (CSUF)",
+        "description": "2024년 5월 졸업 예정으로 컴퓨터-전기공학부 컴퓨터 공학과 전공."
       }
-    ]
+    }
   }
   

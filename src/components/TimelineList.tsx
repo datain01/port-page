@@ -1,42 +1,44 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import TimelineCard from './detail/TimelineCard';
 
 interface TimelineListProps {
     darkMode: boolean;
-  }
-  
-  const TimelineList: React.FC<TimelineListProps> = ({ darkMode }) => {
-    return (
-      <div className="timeline-container" style={{margin:"6rem 0rem"}}>
-        <h1 className='text-center mt-5'>EDUCATION</h1>
-        <ul className='timeline-list mt-5'>
+}
+
+interface TimelineItem {
+  date: string;
+  title: string;
+  description: string;
+}
+
+interface TimelineData {
+  [key: string]: TimelineItem;
+}
+
+const TimelineList: React.FC<TimelineListProps> = ({ darkMode }) => {
+  const { t } = useTranslation();
+
+  const timelineData: TimelineData = t('timeline', { returnObjects: true });
+  const itemKeys = Object.keys(timelineData);
+
+  return (
+    <div className="timeline-container" style={{margin: "6rem 0rem"}}>
+      <h1 className='text-center mt-5'>EDUCATION</h1>
+      <ul className='timeline-list mt-5'>
+        {itemKeys.map((key) => (
           <TimelineCard
-            date="2011-2014"
-            title="International School of Prague"
-            description="Attend the international school from 4th grade to 7th grade, which is located in Prague, Czech Republic."
+            key={key}
+            date={timelineData[key].date}
+            title={timelineData[key].title}
+            description={timelineData[key].description}
             darkMode={darkMode}
           />
-            <TimelineCard
-                date="2017-2018"
-                title="Pungduck HighSchool"
-                description="Attended highschool until 11th grade, which is located in Sugi-gu, Korea"
-                darkMode={darkMode}
-            />
-            <TimelineCard
-                date="2018-2020"
-                title="Northwood HighSchool"
-                description="Attended highschool from 11th grade to 12th grade, which is located in California, United States."
-                darkMode={darkMode}
-            />
-            <TimelineCard
-                date="2020-Now"
-                title="California State University, Fullerton"
-                description="Have attended university and expect to grade in 2024, computer engineering B.S. major undergraduate"
-                darkMode={darkMode}
-            />
-            </ul>
-        </div>
+        ))}
+      </ul>
+    </div>
   );
 };
+
 
 export default TimelineList;
