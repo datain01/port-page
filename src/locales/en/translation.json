@@ -14,6 +14,14 @@
         "langJap": "Japanese"
     },
 
+    "Contact": {
+      "copy": "email address is copied to clipboard",
+      "copyFail": "Copy failed.",
+      "description": "If you are interested, please contact with following contact information",
+      "title": "Contact Me",
+      "resume": "Download Resume"
+    },
+
     "timeline": {
       "elementarySchool": {
         "date": "2011-2014",

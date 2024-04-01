@@ -1,16 +1,19 @@
+import { useTranslation } from 'react-i18next';
+
 interface ContactProps {
 darkMode: boolean;
 }
 
 const Contact: React.FC<ContactProps> = ({darkMode}) => {
+    const { t } = useTranslation();
 
     const copyEmailToClipboard = async () => {
         const email = "baksoeun01@gmail.com";
         try {
           await navigator.clipboard.writeText(email);
-          alert("Email address copied to clipboard!"); 
+          alert(t('Contact.copy')); 
         } catch (err) {
-          console.error("Failed to copy: ", err);
+          console.error(t('Contact.copyFail'), err);
         }
       };
 
@@ -18,8 +21,8 @@ const Contact: React.FC<ContactProps> = ({darkMode}) => {
         <>
         <h1>Alive Contact</h1>
             <div className="text-center">
-                <h5 className="mt-4">If you are interested in me, please contact with following info</h5>
-                <h3 className="mt-5 mb-3">Contact Me</h3>
+                <h5 className="mt-4">{t('Contact.description')}</h5>
+                <h3 className="mt-5 mb-3">{t('Contact.title')}</h3>
                 <h5> <i className="bi bi-envelope-at me-2"></i>
                 <span className="navbar-text" onClick={copyEmailToClipboard} style={{cursor: "pointer"}}>baksoeun01@gmail.com</span>                    
                 </h5>
@@ -41,7 +44,7 @@ const Contact: React.FC<ContactProps> = ({darkMode}) => {
                 <a href="https://drive.google.com/file/d/1LsTQaWwaaQNN3x6Tdt_pHMwhfwGQ3xIE/view?usp=sharing" target="_blank">
                         <button type="button" className={`btn ${darkMode ? 'btn-outline-light' : 'btn-outline-dark'}`} 
                             style={{ marginTop: '-1rem' }}>
-                            <i className={`bi bi-download`}></i> Download Resume
+                            <i className={`bi bi-download`}></i> {t('Contact.resume')}
                         </button>
                     </a>
             </div>
