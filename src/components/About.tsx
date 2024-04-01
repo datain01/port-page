@@ -1,23 +1,25 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import LangCard from "./detail/langCard";
 
 const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
+    const { t } = useTranslation();
     const [greeting, setGreeting] = useState<string>('');
 
     useEffect(() => {
         const date = new Date();
         const hour = date.getHours();
-        let dynamicGreeting = '';
+        let dynamicGreeting = t('About.morning');
 
         if (hour < 12) {
-            dynamicGreeting = "Good morning, ";
+            dynamicGreeting = t('About.morning');
         } else if (hour < 18) {
-            dynamicGreeting = "Good afternoon, ";
+            dynamicGreeting = t('About.afternoon');
         } else {
-            dynamicGreeting = "Good evening, ";
+            dynamicGreeting = t('About.evening');
         }
 
-        setGreeting(dynamicGreeting + "my name is");
+        setGreeting(dynamicGreeting + t('About.my'));
 
     }, []);
 
@@ -27,16 +29,16 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 <div className="col-md-12 text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '60vh' }}>
                     <h1>
                         <div className="my-4">{greeting}</div>
-                        <span style={{ fontSize: '4rem' }}>SOEUN PARK</span>
+                        <span style={{ fontSize: '4rem' }}>{t('About.name')}</span>
                     </h1>
                 </div>
                 <h3 className="text-center" style={{marginTop: "-6rem"}}>
-                    This is Soeun Park's Portfolio Page
+                    {t('About.introduction')}
                 </h3>
 
                 <div className="text-center" style={{marginTop:"4rem"}}>
                     <h3> 
-                    I am a computer engineering student at California State University, Fullerton.
+                    {t('About.self')}
                     </h3>
                     <div className="google-map w-100">
                             <iframe
@@ -44,20 +46,14 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                                 width="600" height="400" style={{border:"0"}} allowFullScreen className="mt-4"></iframe>
                     </div>
                     <h5 style={{margin:"3rem 12rem"}}>
-                    I am from Korea and currently an undergraduate student in computer engineering major. 
-                    The estimated graduation year is 2024. I have experience of living in Korea, Czech Republic, 
-                    and United States which drive me to have a flexible mind. 
-                    I improved skills related to computer design and electronics during Bachelor's degree. 
-                    I can work with several programming languages such as C/C++, VHDL, Verilog, Assembly language, HTML, CSS, JavaScript
-                    (TypeScript), and MATLAB. As I am interested in diverse skills, I can work with Adobe Premiere Pro, photoshop, and animation. If you are interested in me, 
-                    please check the following resume.
+                    {t('About.selfDescription')}
                     </h5>
 
                     {/* 링크는 이력서로 바꾸기 */}
                     <a href="https://drive.google.com/file/d/1LsTQaWwaaQNN3x6Tdt_pHMwhfwGQ3xIE/view?usp=sharing" target="_blank">
                         <button type="button" className={`btn ${darkMode ? 'btn-outline-light' : 'btn-outline-dark'}`} 
                             style={{ marginTop: '-1rem' }}>
-                            <i className={`bi bi-download`}></i> Download Resume
+                            <i className={`bi bi-download`}></i> {t('About.resume')}
                         </button>
                     </a>
 
@@ -82,7 +78,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                             />
                             <LangCard
                             imageUrl="/port-page/image/skill_js.png"
-                            description="JavaScript/TypeScript"
+                            description="Javascript/Typescript"
                             darkMode={darkMode}
                             />
                         </div>
@@ -113,13 +109,13 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
 
                     <div className="progress-stacked" style={{ margin: "4rem 16rem", height:'2rem' }}>
                         <div className="progress" role="progressbar" aria-label="Korean" aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} style={{ width: '40%', height: '2rem' }}>
-                            <div className="progress-bar bg-primary" style={{ width: '100%', height: '2rem' }}>Korean</div>
+                            <div className="progress-bar bg-primary" style={{ width: '100%', height: '2rem' }}>{t('About.langKor')}</div>
                         </div>
                         <div className="progress" role="progressbar" aria-label="English" aria-valuenow={35} aria-valuemin={0} aria-valuemax={100} style={{ width: '35%', height: '2rem' }}>
-                            <div className="progress-bar bg-success" style={{ width: '100%', height: '2rem' }}>English</div>
+                            <div className="progress-bar bg-success" style={{ width: '100%', height: '2rem' }}>{t('About.langEng')}</div>
                         </div>
                         <div className="progress" role="progressbar" aria-label="Japanese" aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} style={{ width: '25%', height: '2rem' }}>
-                            <div className="progress-bar bg-info" style={{ width: '100%', height: '2rem' }}>Japanese</div>
+                            <div className="progress-bar bg-info" style={{ width: '100%', height: '2rem' }}>{t('About.langJap')}</div>
                         </div>
                     </div>
 

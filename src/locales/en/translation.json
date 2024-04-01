@@ -1,4 +1,19 @@
 {
+    "About" : {
+        "morning": "Good morning ",
+        "afternoon": "Good afternoon",
+        "evening": "Good evening ",
+        "my": "my name is",
+        "name": "SOEUN PARK",
+        "introduction":  "This is Soeun Park's Portfolio Page",
+        "self": "I am a computer engineering student at California State University, Fullerton.",
+        "selfDescription": "I am from Korea and currently an undergraduate student in computer engineering major. The estimated graduation year is 2024. I have experience of living in Korea, Czech Republic, and United States which drive me to have a flexible mind. I improved skills related to computer design and electronics during Bachelor's degree. I can work with several programming languages such as C/C++, VHDL, Verilog, Assembly language, HTML, CSS, JavaScript (TypeScript), and MATLAB. As I am interested in diverse skills, I can work with Adobe Premiere Pro, photoshop, and animation. If you are interested in me, please check the following resume.",
+        "resume": "Download Resume",
+        "langKor": "Korean",
+        "langEng": "English",
+        "langJap": "Japanese"
+    },
+
     "timeline": {
       "elementarySchool": {
         "date": "2011-2014",
