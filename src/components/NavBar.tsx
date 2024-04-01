@@ -1,3 +1,6 @@
+import LanguageSwitcher from './LanguageSwitcher';
+
+
 interface NavBarProps {
     darkMode: boolean;
     toggleDarkMode: () => void; 
@@ -19,6 +22,7 @@ interface NavBarProps {
       <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'} fixed-top`}>
                 <div className="container-fluid">
                 <a className="navbar-brand ms-5" href="#">Soeun</a>
+                <LanguageSwitcher darkMode={darkMode} />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
