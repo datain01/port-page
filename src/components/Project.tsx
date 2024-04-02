@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ProjCard from './detail/ProjCard';
 
 interface ProjectProps {
@@ -6,107 +7,30 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({ darkMode }) => {
+  const { t } = useTranslation();
+  const projects = t('Project.projectList', { returnObjects: true });
+
   return (
     <>
       <div className={`text-center ${darkMode ? 'text-light' : 'text-dark'} ${darkMode ? 'bg-dark' : 'bg-light'}`}>
         <h1>Project List</h1>
-        <p style={{margin: "1rem 8rem"}}>Following projects are the works I have done.
-            The title of the projects and the programming languages used are listed. <br/>
-            If you click the cards, you can check detailed information and files. (Updating)</p>
+        <p style={{margin: "1rem 8rem"}}>{t('Project.description')}</p>
       </div>
 
       <div className={`container ${darkMode ? 'bg-dark' : 'bg-light'}`}>                    
         <div className="row mt-5 justify-content-center">
-          <div className="col-md-4 mx-4">
-            <ProjCard
-              lang = "React, TypeScript"
-              title="Half-Random Nickname Generator"
-              date="September 2023"
-              context="A random nickname generator for a game called, Maplestory. The user can type one letter and then generate random letters for rest of the space.
-              There are three types of buttons to generate two letters, three letters, and six letters nickname."
-              darkMode={darkMode}
-              buttonLink="https://github.com/datain01/half-nyehuing"
-            />
-          </div>
-          <div className="col-md-4 mx-4">
-            <ProjCard
-              lang = "NextJS, ExpressJS, PostgreSQL, typeORM, Docker"
-              title="Twitter Clone Coding"
-              date="September 2023"
-              context="Clone codinf of the twitter to study NextJS, ExpressJS, PostgreSQL, typeORM, Docker, and bootstrap. 
-              To study the commonly used micro-service architecture system."
-              darkMode={darkMode}
-              buttonLink="https://github.com/datain01/twtClone"
-            />
-          </div>
-          <div className="col-md-4 mx-4 mt-4">
-            <ProjCard
-              lang = "HTML, JavaScript/TypeScript"
-              title="Game Stats Simulator"
-              date="June 2023"
-              context="A simulation calculator for a game called, Maplestory. This is for calculating a system called hyper stats in the game."
-              darkMode={darkMode}
-              buttonLink="https://github.com/datain01/hyperCalc"
-            />
-          </div>
-
-          <div className="col-md-4 mx-4 mt-4">
-            <ProjCard
-              lang = "MATLAB"
-              title="Real-Time Voice Shifter"
-              date="December 2023"
-              context="Offering interactive pitch shifting and echo effects directly. 
-              Users can adjust the pitch to higher or lower tones and add degrees of echo actively using sliders.
-              "
-              darkMode={darkMode}
-              buttonLink="https://github.com/datain01/voice"
-            />
-          </div>
-          <div className="col-md-4 mx-4 mt-4">
-            <ProjCard
-            lang = "Verilog"
-              title="Up-Down Guessing Game"
-              date="December 2023"
-              context="Guessing 7-bit number with switch input. The system compares guessed number and the actual number and determines whether high or low. If the user
-              guesses correctly in 10 chances, the user wins."
-              darkMode={darkMode}
-              buttonLink="https://github.com/datain01/updown"
-            />
-          </div>
-          {/* 450 lab 4 */}
-          <div className="col-md-4 mx-4 mt-4">
-            <ProjCard
-              lang = "C"
-              title="Intersection traffic light controller"
-              date="October 2023"
-              context="It is a system that controls the traffic lights of cars and pedestrians at the intersection based on FSM state. It can be tested directly with the MSP432 microcontroller board."             
-              darkMode={darkMode}
-              buttonLink="https://github.com/datain01/trafficControl"
-            />
-          </div>
-          {/* 450 lab 3 */}
-          <div className="col-md-4 mx-4 mt-4">
-            <ProjCard
-              lang = "Assembly"
-              title="Blink Controller"
-              date="September 2023"
-              context="Interfacing a switch and an LED with the MSP 432 board. The actual switch and LED are attached to the breadboard. The circuit was tested with Multisim."
-              darkMode={darkMode}
-              buttonLink="https://github.com/datain01/blinkControl"
-            />
-          </div>
-          <div className="col-md-4 mx-4 mt-4">
-            <ProjCard
-              lang = "C++"
-              title="Cache Hit Ratio Calculator"
-              date="November 2022"
-              context="For studying cache hit and cache miss concepts. There are four ways to calculate Fibonacci numbers and calculated cache hit ratios according to the
-              number of test cases."
-              darkMode={darkMode}
-              buttonLink="https://github.com/datain01/cacheHit"
-            />
-          </div>
-          
+          {Object.entries(projects).map(([key, project]) => (
+            <div key={key} className="col-md-4 mx-4 mt-4">
+              <ProjCard
+                lang={project.lang}
+                title={project.title}
+                date={project.date}
+                context={project.context}
+                darkMode={darkMode}
+                buttonLink={project.buttonLink}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </>
