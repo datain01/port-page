@@ -34,6 +34,20 @@
     "Project": {
       "description": "Following projects are the works I have done. The title of the projects and the programming languages used are listed. If you click the cards, you can check detailed information and files. (Updating)",
       "projectList": {
+        "Portfolio": {
+          "lang": "React (Vite), Typescript",
+          "title": "Portfolio",
+          "date": "January 2024",
+          "context": "Portfolio page (this webpage) to introduce myself. For user's convenience, darkmode and translation (i18n) are applied.",
+          "buttonLink": "https://github.com/datain01/port-page"
+        },
+        "LensGame": {
+          "lang": "C#",
+          "title": "Lens Enhance Simulation game",
+          "date": "April 2024 (TDA)",
+          "context": "Unity 2D game project. Simulation game that runs a shop that strengthens glasses lenses, currently in production.",
+          "buttonLink": "https://github.com/datain01/Lentz"
+        },
         "halfRandom": {
           "lang": "React, TypeScript",
           "title": "Half-Random Nickname Generator",
