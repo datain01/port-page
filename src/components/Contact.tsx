@@ -41,7 +41,7 @@ const Contact: React.FC<ContactProps> = ({darkMode}) => {
                     </a>
                     </h5>
 
-                <a href="https://drive.google.com/file/d/1LsTQaWwaaQNN3x6Tdt_pHMwhfwGQ3xIE/view?usp=sharing" target="_blank">
+                <a href={t('Contact.resumeLink')} target="_blank">
                         <button type="button" className={`btn ${darkMode ? 'btn-outline-light' : 'btn-outline-dark'}`} 
                             style={{ marginTop: '-1rem' }}>
                             <i className={`bi bi-download`}></i> {t('Contact.resume')}
