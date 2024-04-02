@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import LangCard from "./detail/langCard";
+import skillC from '/public/images/skill_c.png';
+import skillCss from '/public/images/skill_css.png';
+import skillEx from '/public/images/skill_ex.png';
+import skillJs from '/public/images/skill_js.png';
+import skillNe from '/public/images/skill_ne.png';
+import skillReact from '/public/images/skill_react.png';
+import skillVerilog from '/public/images/skill_verilog.png';
+import skillVhdl from '/public/images/skill_vhdl.png';
 
 const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     const { t } = useTranslation();
@@ -62,22 +70,22 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     <div className="container">                    
                         <div className="row mt-5 justify-content-center">
                             <LangCard
-                            imageUrl="/images/skill_c.png"
+                            imageUrl={skillC}
                             description="C/C++"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="/images/skill_vhdl.png"
+                            imageUrl={skillVhdl}
                             description="VHDL"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="/images/skill_verilog.png"
+                            imageUrl={skillVerilog}
                             description="Verilog"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="/images/skill_js.png"
+                            imageUrl={skillJs}
                             description="Javascript/Typescript"
                             darkMode={darkMode}
                             />
@@ -85,22 +93,22 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
 
                         <div className="row mt-5 justify-content-center">
                             <LangCard
-                            imageUrl="/images/skill_css.png"
+                            imageUrl={skillCss}
                             description="CSS"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="/images/skill_react.png"
+                            imageUrl={skillReact}
                             description="React"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="/images/skill_ne.png"
+                            imageUrl={skillNe}
                             description="Next.js"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl="/images/skill_ex.png"
+                            imageUrl={skillEx}
                             description="Express.js"
                             darkMode={darkMode}
                             />
