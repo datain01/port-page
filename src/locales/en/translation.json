@@ -16,11 +16,14 @@
         "name": "SOEUN PARK",
         "introduction":  "This is Soeun Park's Portfolio Page",
         "self": "I am a computer engineering student at California State University, Fullerton.",
-        "selfDescription": "I am from Korea and currently an undergraduate student in computer engineering major. The estimated graduation year is 2024. I have experience of living in Korea, Czech Republic, and United States which drive me to have a flexible mind. I improved skills related to computer design and electronics during Bachelor's degree. I can work with several programming languages such as C/C++, VHDL, Verilog, Assembly language, HTML, CSS, JavaScript (TypeScript), and MATLAB. As I am interested in diverse skills, I can work with Adobe Premiere Pro, photoshop, and animation. If you are interested in me, please check the following resume.",
+        "selfDesOne": "From a young age, my passion for gaming naturally led me into the world of technology and development. Living in various countries has deepened my understanding of cultural diversity and the importance of identity, leading to volunteer work teaching the Korean language and culture. This volunteer work went beyond merely spreading Korean culture; it allowed me to share my experiences, knowledge, and interests with many others, enriching my perspective. This notion has expanded through my academic pursuits and various projects. From my childhood in the Czech Republic to the present, I have always harbored a passion for learning something new, even amidst changing environments.",
+        "selfDesTwo": "My internship experience with a domestic company provided me with practical knowledge and highlighted the importance of collaborating with experts from different fields to solve problems. This experience has made me more open-minded and adaptable, understanding the core principles of programming, problem-solving techniques, and the value of teamwork. Based on these experiences, I have focused on projects that enhance user experience and tackle technical challenges, thereby honing my skills.",
+        "selfDesThree": "My career goal transcends the mere use of technology; I aim to explore how technology can transform and improve people's lives. To this end, I have continuously developed a deep understanding across various tech domains and the ability to communicate and collaborate effectively with people from diverse backgrounds. Moving forward, I aspire to keep learning new knowledge, embracing challenges, and serving as a bridge between technology and people, growing as an engineer who fosters connections in the digital world.",
         "resume": "Download Resume",
         "langKor": "Korean",
         "langEng": "English",
-        "langJap": "Japanese"
+        "langJap": "Japanese",
+        "skillDescription": "I am able to work with diverse languages and programs such as C/C++, VHDL, Verilog, Assembly language, HTML, CSS, JavaScript (TypeScript), MATLAB, NextJS, ExpressJS, Adobe Premiere Pro, photoshop, and animation."
     },
 
     "Contact": {

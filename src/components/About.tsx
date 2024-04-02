@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 import LangCard from "./detail/langCard";
 import skillC from '/public/images/skill_c.png';
 import skillCss from '/public/images/skill_css.png';
-import skillEx from '/public/images/skill_ex.png';
+import skillMatlab from '/public/images/skill_matlab.png';
 import skillJs from '/public/images/skill_js.png';
-import skillNe from '/public/images/skill_ne.png';
+import skillPre from '/public/images/skill_pre.png';
 import skillReact from '/public/images/skill_react.png';
 import skillVerilog from '/public/images/skill_verilog.png';
 import skillVhdl from '/public/images/skill_vhdl.png';
@@ -53,8 +53,10 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.283490905923!2d-117.88767822289488!3d33.88235202667956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd5ce8cc61391%3A0x2b9810bbb94af355!2sCalifornia%20State%20University%2C%20Fullerton!5e0!3m2!1sen!2skr!4v1686536897459!5m2!1sen!2skr"
                                 width="600" height="400" style={{border:"0"}} allowFullScreen className="mt-4"></iframe>
                     </div>
-                    <h5 style={{margin:"3rem 12rem"}}>
-                    {t('About.selfDescription')}
+                    <h5 style={{margin:"3rem 16rem"}}>
+                    <div className="my-2">{t('About.selfDesOne')}</div>
+                    <div className="my-2">{t('About.selfDesTwo')}</div>
+                    <div className="my-2">{t('About.selfDesThree')}</div>
                     </h5>
 
                     {/* 링크는 이력서로 바꾸기 */}
@@ -66,6 +68,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     </a>
 
                     <h2 className="mt-5">Skills</h2>
+                    <h5 className="mx-5">{t('About.skillDescription')}</h5>
 
                     <div className="container">                    
                         <div className="row mt-5 justify-content-center">
@@ -103,13 +106,13 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl={skillNe}
-                            description="Next.js"
+                            imageUrl={skillMatlab}
+                            description="MATLAB"
                             darkMode={darkMode}
                             />
                             <LangCard
-                            imageUrl={skillEx}
-                            description="Express.js"
+                            imageUrl={skillPre}
+                            description="Adobe Premiere Pro"
                             darkMode={darkMode}
                             />
                         </div>
