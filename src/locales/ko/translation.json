@@ -1,8 +1,17 @@
 {
+    "Head" : {
+        "name" : "소은",
+        "home" : "홈",
+        "about" : "소개",
+        "project": "프로젝트",
+        "contact" : "연락처",
+        "education" : "타임라인"
+      },
+
     "About" : {
-        "morning": "좋은 아침입니다 ",
-        "afternoon": "좋은 오후입니다",
-        "evening": "좋은 저녁입니다 ",
+        "morning": "좋은 아침입니다, ",
+        "afternoon": "좋은 오후입니다, ",
+        "evening": "좋은 저녁입니다, ",
         "my": "제 이름은",
         "name": "박소은입니다",
         "introduction":  "박소은의 포트폴리오 페이지입니다.",
@@ -63,7 +72,7 @@
           "Blinkcon": {
             "lang": "Assembly",
             "title": "LED 컨트롤러",
-            "date": "September 2023",
+            "date": "2023년 9월",
             "context": "MSP4 432 보드를 통해 스위치와 LED 전등을 컨트롤 하는 시스템입니다. 브레드보드에 직접 연결하여 회로를 구성하여 실제 환경에서 구성됐고, Multisim으로 테스트 후 설계됐습니다.",
             "buttonLink": "https://github.com/datain01/blinkControl"
           },

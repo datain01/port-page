@@ -1,4 +1,5 @@
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 
 interface NavBarProps {
@@ -7,39 +8,40 @@ interface NavBarProps {
   }
   
   const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
+    const { t } = useTranslation();
 
     const copyEmailToClipboard = async () => {
         const email = "baksoeun01@gmail.com";
         try {
           await navigator.clipboard.writeText(email);
-          alert("Email address copied to clipboard!"); 
+          alert(t('Contact.copy')); 
         } catch (err) {
-          console.error("Failed to copy: ", err);
+          console.error(t('Contact.copyFail'), err);
         }
       };
 
     return (
       <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'} fixed-top`}>
                 <div className="container-fluid">
-                <a className="navbar-brand ms-5" href="#">Soeun</a>
-                <LanguageSwitcher darkMode={darkMode} />
+                <a className="navbar-brand ms-5" href="#">{t('Head.name')}</a>                
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                     <div className="collapse navbar-collapse mx-5" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                    <a className="nav-link" aria-current="page" href="#">Home</a>
-                    <a className="nav-link" href="#about">About</a>
-                    <a className="nav-link" href="#project">Project</a>
-                    <a className="nav-link" href="#education">Education</a>
-                    <a className="nav-link" href="#contact">Contact</a>
+                    <a className="nav-link" aria-current="page" href="#">{t('Head.home')}</a>
+                    <a className="nav-link" href="#about">{t('Head.about')}</a>
+                    <a className="nav-link" href="#project">{t('Head.project')}</a>
+                    <a className="nav-link" href="#education">{t('Head.education')}</a>
+                    <a className="nav-link" href="#contact">{t('Head.contact')}</a>
                     </div>
-                    
+                      
                         <span className="ms-auto">
                         <span className={`nav-link fw-bold me-5 ${darkMode ? 'text-light' : 'text-dark'}`}>
                             <button onClick={toggleDarkMode} className={`btn ${darkMode ? 'btn-dark' : 'btn-light'} me-3`}>
                                 {darkMode ? <i className="bi bi-sun"></i> : <i className="bi bi-moon"></i>} </button>  
-                                <span className="navbar-text" onClick={copyEmailToClipboard} style={{cursor: "pointer"}}>
+                                <LanguageSwitcher darkMode={darkMode} />
+                                <span className="navbar-text mx-3" onClick={copyEmailToClipboard} style={{cursor: "pointer"}}>
                                     baksoeun01@gmail.com
                                 </span>
                             </span>

@@ -9,19 +9,19 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     useEffect(() => {
         const date = new Date();
         const hour = date.getHours();
-        let dynamicGreeting = t('About.morning');
-
+        let dynamicGreeting = '';
+    
         if (hour < 12) {
             dynamicGreeting = t('About.morning');
         } else if (hour < 18) {
             dynamicGreeting = t('About.afternoon');
         } else {
             dynamicGreeting = t('About.evening');
-        }
-
+        }    
+    
         setGreeting(dynamicGreeting + t('About.my'));
-
-    }, []);
+    }, [t]); 
+    
 
     return (
         <>

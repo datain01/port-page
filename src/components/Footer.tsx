@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({darkMode}) => {
               <span>made by Soeun Park | All Right Reserved</span>
             </div>
             <div className="col text-end">
-              <span>Updated at 240212</span>
+              <span>Created at 240131</span>
             </div>
           </div>
         </div>

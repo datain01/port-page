@@ -1,8 +1,17 @@
 {
+    "Head" : {
+      "name" : "Soeun",
+      "home" : "HOME",
+      "about" : "ABOUT",
+      "project": "PROJECT",
+      "contact" : "CONTACT",
+      "education" : "EDUCATION"
+    },
+
     "About" : {
-        "morning": "Good morning ",
-        "afternoon": "Good afternoon",
-        "evening": "Good evening ",
+        "morning": "Good morning, ",
+        "afternoon": "Good afternoon, ",
+        "evening": "Good evening, ",
         "my": "my name is",
         "name": "SOEUN PARK",
         "introduction":  "This is Soeun Park's Portfolio Page",
@@ -35,7 +44,7 @@
         "TwitterClone": {
           "lang": "NextJS, ExpressJS, PostgreSQL, typeORM, Docker",
           "title": "Twitter Clone Coding",
-          "date": "September 2023",
+          "date": "October 2023",
           "context": "Clone coding of the twitter to study NextJS, ExpressJS, PostgreSQL, typeORM, Docker, and bootstrap. To study the commonly used micro-service architecture system.",
           "buttonLink": "https://github.com/datain01/twtClone"
         },
